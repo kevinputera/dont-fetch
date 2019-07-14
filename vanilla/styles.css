@@ -1,0 +1,8 @@
+#print, #explain {
+  margin: 10px;
+  padding: 0;
+}
+
+#explain {
+  color: grey;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vanilla JS Fetch Cancellation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button id="five-seconds-timeout">Timeout five seconds, print "five"</button>
+  <button id="one-second-timeout">Timeout one second, print "one"</button>
+  <button id="clear">Clear</button>
+  <input id="cancellation" type="checkbox"><i>Use cancellation</i></input>
+  <p id="print"></p>
+
+  <p id="explain">
+    * This uses setTimeout to simulate fetch(and other async) requests. <br />
+    Try pressing "five" and "one", in that order. <br />
+    Without cancellation, after five seconds, the result from "one" will get overriden. <br />
+    With cancellation, the result of "one" will be preserved.
+  </p>
+
+  <script src="index.js"></script>
+</body>
+</html>
